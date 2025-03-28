@@ -1,0 +1,120 @@
+@font-face {
+	font-family: "Raleway";
+	src: url("/assets/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+:root {
+	--base-font: "Raleway";
+	--transparent-cover: rgba(51, 63, 103, 0.2);
+	--link-color: hsl(200, 60%, 70%);
+}
+body {
+	background-color: #202326;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+header {
+	z-index: 2;
+	position: relative;
+	width: 100vw;
+	height: 10%;
+	margin-bottom: -10%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: rgba(134, 144, 154, .15);
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);	
+}
+.headerContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	width: 100%;
+	height: 80%;
+	padding: 0 10% 0 10%;
+}
+a {
+	text-decoration: none;
+}
+header a {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.logoLink {
+}
+.logo {
+	height: 100%;
+	max-height: 100%;
+	width: auto;
+}
+.docLink {
+}
+h1, h2 {
+	font-family: var(--base-font);
+	color: white;
+	font-weight: 1000;
+}
+main {
+	z-index: 1;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.backgroundImage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url("/assets/board_games.jpg");
+	background-size: cover;
+	opacity: .6;
+	background-blend-mode: darken;
+	background-color: var(--transparent-cover)
+}
+.catchphrase {
+	position: relative;
+	padding: 25% 10% 10%;
+
+	h1 {
+		font-size: 3.5em;
+		letter-spacing: .05em;
+	}
+}
+footer {
+	padding: 1%;
+	background-color: #111;
+}
+.columns {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 0 10%;
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			margin-bottom: 5px;
+			font-size: 18px;
+
+			a {
+				color: #898989;
+				font-family: var(--base-font);
+				transition: all .2s ease-in-out;
+
+				&:hover {
+					color: var(--link-color);
+				}
+			}
+		}
+	}
+}
