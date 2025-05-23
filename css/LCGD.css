@@ -73,7 +73,7 @@ main {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-image: url("/assets/board_games.jpg");
+	background-image: url("/LCGD/assets/board_games.jpg");
 	background-size: cover;
 	opacity: .6;
 	background-blend-mode: darken;
