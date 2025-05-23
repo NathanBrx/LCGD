@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Documentation</title>
+		<link rel="icon" href="/LCGD/assets/petit_cheval.png"/>
+		<link rel="stylesheet" type="text/css" href="/LCGD/css/docs.css" />
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navigationSideBar">
+				<div class="navDiv">
+					<div class="headerContainer">
+						<a href="/LCGD/docs" class="logoLink">
+							<img class="logo" src="/LCGD/assets/petit_cheval.png">
+							<h1>DSL Documentation</h1>
+						</a> 
+					</div>
+					<div class="navContent">
+						<a href="/LCGD/docs" class="docLink">
+							<h2>Documentation</h2>
+						</a>
+						<ul class="docList">
+							<li class="l1">
+								<a class="internalRef" href="#introduction">Introduction</a>
+							</li>
+							<li class="l1">
+								<a class="internalRef" href="#players">Players</a>
+							</li>
+							<li class="l1">
+								<a class="internalRef" href="#pawns">Pawns</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="content">
+				<section id="introduction">
+					<h1>Introduction</h1>
+					<p>Welcome to the documentation of the LCGD Domain Specific Language !</p>
+				</section>
+				<section id="players">
+					<h1>Players</h1>
+					<p>Players are the main actors of the game.</p>
+					<ul>
+						<li>Each player has a unique identifier.</li>
+						<li>Players have a color property, and can be given custom attributes like hp or powers.</li>
+						<li>Players can interact with the game by moving pawns.</li>
+					</ul>
+				</section>
+				<section id="pawns">
+					<h1>Pawns</h1>
+					<p>Pawns are the base element of any game.</p>
+					<ul>
+						<li>Each pawn has a unique identifier.</li>
+						<li>Pawns have properties such as category, position, sprite, and player.</li>
+						<li>Players interact with the pawns by moving them.</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
